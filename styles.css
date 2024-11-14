@@ -1,0 +1,113 @@
+/* Basic Styles and Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+
+/* Navbar */
+header { background-color: #040c66; padding: 1em 0; position: fixed; width: 100%; }
+nav ul { display: flex; justify-content: center; }
+nav a { color: #fff; text-decoration: none; margin: 0 1em; }
+
+/* Smooth Scroll Section */
+section { padding: 100px 20px; text-align: center; }
+
+#raju{
+    height: 300px;
+    width: 300px;
+}
+
+/* Animated Text */
+.animated-text { font-size: 3em; animation: slide-in 1s ease-out forwards; }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-100px); } to { opacity: 1; transform: translateX(0); } }
+
+/* Skills Section with Progress Bars */
+.skill-item { margin: 20px 0; }
+.progress-bar { background-color: #131111; border-radius: 10px; overflow: hidden; }
+.progress-fill { height: 10px; background-color: #ffd700; }
+
+/* Project Hover Effects */
+.project-item { background-color: hwb(0 6% 4%); padding: 20px; transition: transform 0.3s; border-radius: 10px; }
+.project-item:hover { transform: scale(1.05); }
+
+/* Contact Form */
+.contact-form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 10px; border-radius: 5px; border: 1px solid #d21b1b; }
+.contact-form .btn { background-color: #333; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+
+footer { background-color: #051061; color: #fff; padding: 10px; }
+
+body { font-family: 'Roboto', sans-serif; }
+
+/* Navbar Link Hover and Active State */
+nav a:hover {
+    color: #fbff00; /* Gold color on hover */
+}
+
+nav a.active {
+    color: #ffd700; /* Highlight active link */
+    font-weight: bold;
+}
+
+
+/* Section Background Gradient */
+section {
+    background: linear-gradient(135deg, #1bc1e6, #ffffff);
+    padding: 100px 20px;
+}
+
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #333; /* Darker text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navbar items */
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5em;
+        color: #fff;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 1em;
+    }
+}
+
+/* Show Navbar on Toggle */
+nav ul.show {
+    display: flex;
+}
+
+
+/* Project Item Hover Effects */
+.project-item {
+    background-color: hsl(180, 85%, 50%);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#food{
+    height: 300px;
+    width: 400px;
+}
+
+#tms{
+    height: 300px;
+    width: 500px;
+}
+
+
